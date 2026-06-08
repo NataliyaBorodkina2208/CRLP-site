@@ -77,7 +77,7 @@ margin-bottom: 50px;
 }
 
 .header-logo img {
-  /* display: block; */
+  display: block;
   width: 220px;
   height: auto;
 }
@@ -114,4 +114,146 @@ margin-bottom: 50px;
 
 .hero-btn {
   margin-bottom: 14px;
+}
+/* дорожная карта */
+
+
+.section-title-center {
+  text-align: center;
+}
+
+.section-descr-center {
+  text-align: center;
+}
+.roadmap-item-icon {
+  justify-content: space-between;
+}
+
+.roadmap-item {
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 270px;
+  /* outline: 1px solid blue; */
+  }
+
+  .roadmap-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+
+  .roadmap-item-icon {
+  display: block;
+  height: 77px;
+  margin-bottom: 25px;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 20px;
+}
+
+
+.section-item-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.roadmap-item-descr {
+  margin: 0;
+  text-align: center;
+}
+
+/* faq */
+.faq-list {
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  width: 570px;
+  outline: 2px solid #F8F7F7;
+  margin-bottom: 30px;
+}
+
+.faq-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+
+}
+
+.blog-preview-image {
+  flex-shrink: 0;
+  width: 170px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.blog-preview-text {
+  padding: 30px;
+}
+
+.blog-preview-question {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.blog-preview-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.blog-preview-descr {
+  margin: 0;
+}
+
+/* documents */
+.documents-section-descr {
+  margin: 0;
+  margin-bottom: 8px;
+}
+.documents-info {
+  width: 670px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.documents-list {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.documents-list-item {
+  margin-bottom: 6px;
+}
+
+.documents-cards-list-item {
+  flex-direction: column;
+  width: 370px;
+  padding: 50px 36px;
+  padding-bottom: 30px;
+  outline: 2px solid #F8F7F7;
+}
+
+.documents-cards-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.documents-cards-item-title {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.documents-cards-item-descr {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.documents-cards-summary {
+  margin-top: auto;
+  align-items: center;
+}
+
+.documents-cards-avatar {
+  flex-shrink: 0;
+  width: 67px;
+  margin-right: 17px;
+}
+
+.documents-cards-name {
+  margin-bottom: 2px;
 }
