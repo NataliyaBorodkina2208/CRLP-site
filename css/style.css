@@ -259,6 +259,27 @@ margin-bottom: 50px;
   margin-bottom: 2px;
 }
 
+.documents-cards-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.documents-cards-link {
+  display: block
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  color: #289244;
+  text-decoration: underline;
+}
+
+.documents-cards-link {
+  color: #289244;
+  text-decoration: underline;
+}
+
 /* contacts */
 .contacts-address {
   font-style: normal;
