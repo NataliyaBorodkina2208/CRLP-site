@@ -61,6 +61,7 @@ margin-bottom: 50px;
   padding-top: 87px;
   padding-bottom: 160px;
 }
+/* header */
 
 .header {
   padding: 36px 0;
@@ -169,7 +170,7 @@ margin-bottom: 50px;
 
 .faq-item {
   width: 570px;
-  outline: 2px solid #F8F7F7;
+  outline: 2px solid red;
   margin-bottom: 30px;
 }
 
@@ -227,7 +228,7 @@ margin-bottom: 50px;
   width: 370px;
   padding: 50px 36px;
   padding-bottom: 30px;
-  outline: 2px solid #F8F7F7;
+  outline: 2px solid red;
 }
 
 .documents-cards-list-item:not(:nth-child(3n)) {
@@ -256,4 +257,55 @@ margin-bottom: 50px;
 
 .documents-cards-name {
   margin-bottom: 2px;
+}
+
+/* contacts */
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-item {
+  flex-direction: column;
+  width: 370px;
+  outline: 2px solid red;
+}
+
+.contacts-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.contacts-item-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-item-link:not(:last-child) {
+  margin-bottom: 5px;
+}
+/* footer */
+.footer {
+  padding: 42px;
+}
+
+.footer-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-logo img {
+  display: block;
+  width: 70px;
+  height: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 36px;
 }
