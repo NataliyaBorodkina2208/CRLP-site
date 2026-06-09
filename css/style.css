@@ -230,6 +230,7 @@ margin-bottom: 50px;
   padding: 50px 36px;
   padding-bottom: 30px;
   outline: 2px solid rgb(223, 222, 222);
+  margin-bottom: 30px;
 }
 
 .documents-cards-list-item:not(:nth-child(3n)) {
@@ -238,11 +239,13 @@ margin-bottom: 50px;
 .documents-cards-item-title {
   margin: 0;
   margin-bottom: 6px;
+  min-height: 20px;
 }
 
 .documents-cards-item-descr {
   margin: 0;
   margin-bottom: 30px;
+  min-height: 130px;
 }
 
 .documents-cards-summary {
@@ -250,16 +253,20 @@ margin-bottom: 50px;
   align-items: center; */
   margin-top: auto;
   align-items: flex-start;
+  /* outline: 1px solid red; */
 }
 
 .documents-cards-avatar {
   flex-shrink: 0;
   width: 67px;
+  height: 67px;
   margin-right: 17px;
 }
 
 .documents-cards-name {
-  margin-bottom: 2px;
+  margin-bottom: 2px; 
+  min-height: 80px;
+  /* outline: 1px solid red;  */
 }
 
 .documents-cards-links {
