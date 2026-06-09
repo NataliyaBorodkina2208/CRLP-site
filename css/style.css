@@ -170,7 +170,7 @@ margin-bottom: 50px;
 
 .faq-item {
   width: 570px;
-  outline: 2px solid red;
+  outline: 2px solid grey;
   margin-bottom: 30px;
 }
 
@@ -228,7 +228,7 @@ margin-bottom: 50px;
   width: 370px;
   padding: 50px 36px;
   padding-bottom: 30px;
-  outline: 2px solid red;
+  outline: 2px solid grey;
 }
 
 .documents-cards-list-item:not(:nth-child(3n)) {
@@ -267,7 +267,7 @@ margin-bottom: 50px;
 .contacts-item {
   flex-direction: column;
   width: 370px;
-  outline: 2px solid red;
+  outline: 2px solid grey;
 }
 
 .contacts-item:not(:nth-child(3n)) {
