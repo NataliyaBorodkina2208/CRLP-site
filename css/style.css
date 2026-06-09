@@ -218,6 +218,7 @@ margin-bottom: 50px;
 .documents-list {
   margin: 0;
   margin-bottom: 50px;
+  
 }
 .documents-list-item {
   margin-bottom: 6px;
@@ -245,8 +246,10 @@ margin-bottom: 50px;
 }
 
 .documents-cards-summary {
+  /* margin-top: auto;
+  align-items: center; */
   margin-top: auto;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .documents-cards-avatar {
@@ -268,17 +271,11 @@ margin-bottom: 50px;
 
 .documents-cards-link {
   display: block;
-  margin-bottom: 8px;
 
   font-size: 16px;
   color: #289244;
   text-decoration: underline;
   
-}
-
-.documents-cards-link {
-  color: #289244;
-  text-decoration: underline;
 }
 
 /* contacts */
