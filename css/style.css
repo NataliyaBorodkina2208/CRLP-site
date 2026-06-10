@@ -524,6 +524,8 @@ color: #1C1C1C;
 /* contacts */
 .contacts {
   scroll-margin-top: 60px;
+  border-bottom: 1px solid rgb(192, 188, 188);
+
 }
 
 .contacts-address {
@@ -533,8 +535,26 @@ color: #1C1C1C;
 .contacts-item {
   flex-direction: column;
   width: 370px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 29px 29px;
+  padding-top: 48px;
   /* outline: 2px solid grey; */
 }
+
+.contacts-item-address {
+  background-image: url('../img/icon_location.svg');
+}
+
+.contacts-item-call {
+  background-image: url(../img/icon_phone.svg);
+  background-size: 27px 27px;
+}
+
+.contacts-item-mail {
+  background-image: url(../img/icon_mail.svg)
+}
+
 
 .contacts-item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -542,12 +562,26 @@ color: #1C1C1C;
 
 .contacts-item-title {
   margin: 0;
+  padding-top: 6px;
   margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1C1C1C;
 }
 
-.contacts-item-link:not(:last-child) {
+.contacts-item-link {
   margin-bottom: 5px;
-}
+  /* display: block; */
+
+  font-weight: 600;  
+  font-size: 16px;
+  color: #289244;
+  /* text-decoration: underline; */
+  line-height: 180%;
+ }
+
+
 /* footer */
 .footer {
   padding: 42px;
