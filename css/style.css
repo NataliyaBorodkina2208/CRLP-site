@@ -587,6 +587,18 @@ color: #1C1C1C;
   padding: 42px;
 }
 
+.footer-copy {
+  font-size: 12px;
+  line-height: 100%;
+  color: grey;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+}
+
 .footer-container {
   align-items: center;
   justify-content: space-between;
@@ -608,4 +620,36 @@ color: #1C1C1C;
 
 .footer-item:not(:last-child) {
   margin-right: 36px;
+}
+
+.social {
+  margin-left: 24px;
+  gap: 18px;
+}
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+
+.footer-right {
+  align-items: center;
+}
+
+.social-link-vk {
+  background-image: url(../img/icon_vk_color.svg);
+}
+
+.social-link-telegram {
+  background-image: url(../img/icon_telegram_color.svg);
+  /* border-radius: 6px; */
+}
+
+.social-link-max {
+  background-image: url(../img/icon_max_color.svg);
 }
