@@ -84,16 +84,17 @@ body {
 .section-title {
   margin: 0;
   margin-bottom: 40px;
+
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #1C1C1C;
 }
 
-.section-descr {
-margin: 0;
-margin-bottom: 50px;
-}
 
 .section-offset {
-  padding-top: 87px;
-  padding-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 
@@ -173,7 +174,12 @@ margin-bottom: 50px;
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.hero-btn {
+  margin-bottom: 14px;
+  min-width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 .hero-content {
@@ -198,21 +204,29 @@ margin-bottom: 50px;
   font-size: 18px;
 }
 
-.hero-btn {
-  margin-bottom: 14px;
-}
+
 /* roadmap */
 .roadmap {
   scroll-margin-top: 120px;
+  border-bottom: 1px solid rgb(192, 188, 188);
 }
 
-.section-title-center {
+.roadmap-section-title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.section-descr-center {
-  text-align: center;
+.roadmap-section-descr {
+margin: 0;
+margin-bottom: 50px;
+
+text-align: center;
+
+font-size: 16px;
+line-height: 120%;
+color: #1C1C1C;
 }
+
 .roadmap-item-icon {
   justify-content: space-between;
 }
@@ -220,9 +234,10 @@ margin-bottom: 50px;
 .roadmap-item {
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 60px 30px;
   width: 270px;
-  /* outline: 1px solid blue; */
+  /* border: 1px solid rgb(192, 188, 188);
+  border-radius: 12px; */
   }
 
   .roadmap-item:not(:nth-child(4n)) {
@@ -238,15 +253,21 @@ margin-bottom: 50px;
   margin-bottom: 20px;
 }
 
-
-.section-item-title {
+/* сделать что-то похожее по остальным, но со своими ньюансами */
+.roadmap-item-title { 
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1C1C1C;
 }
 
 .roadmap-item-descr {
   margin: 0;
   text-align: center;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .roadmap-video-caption {
@@ -270,6 +291,7 @@ margin-bottom: 50px;
 
 .video {
   display: block;
+  border-radius: 8px;
   width: 900px;
   height: 506px;
   margin: 0 auto;
@@ -278,17 +300,26 @@ margin-bottom: 50px;
 /* faq */
 .faq {
   scroll-margin-top: 120px;
+  border-bottom: 1px solid rgb(192, 188, 188);
 }
 
 .faq-list {
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+  /* flex-wrap: wrap; */
+  /* margin-bottom: 30px; */
+  flex-direction: column;
+  gap: 30px;
 }
 
 .faq-item {
-  width: 570px;
-  outline: 2px solid rgb(223, 222, 222);
-  margin-bottom: 30px;
+  /* width: 570px; */
+  /* outline: 2px solid rgb(223, 222, 222); */
+  /* width: calc((100% - 60px)); */
+  width: 100%;
+  /* padding: 20px; */
+  margin-bottom: 10px;
+  /* width: 900px;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 .faq-item:not(:nth-child(2n)) {
@@ -298,32 +329,78 @@ margin-bottom: 50px;
 
 .blog-preview-image {
   flex-shrink: 0;
-  width: 170px;
-  height: 180px;
+  margin-top: 4px;
+  margin-right: 10px;
+  /* width: 170px;
+  height: 180px; */
+  width: 180px;
+  height: 190px;
   object-fit: contain;
+}
+
+.blog-preview {
+  overflow: hidden;
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 4px;
 }
 
 .blog-preview-text {
   padding: 30px;
+  max-width: 750px;
+
 }
 
 .blog-preview-question {
   display: block;
   margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 120%;
 }
 
 .blog-preview-title {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1C1C1C;
 }
 
 .blog-preview-descr {
   margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1C1C1C;
+}
+.blog-preview-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.blog-preview-list-item {
+  position: relative;
+  padding-left: 24px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1C1C1C;
+}
+.blog-preview-list-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+
+  color: #289244;
+  font-weight: 700;
 }
 
 /* documents */
 .documents {
   scroll-margin-top: 120px;
+  border-bottom: 1px solid rgb(192, 188, 188);
 }
 
 .documents-section-descr {
@@ -339,18 +416,24 @@ margin-bottom: 50px;
 .documents-list {
   margin: 0;
   margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1C1C1C;
   
 }
 .documents-list-item {
   margin-bottom: 6px;
 }
 
+
 .documents-cards-list-item {
   flex-direction: column;
   width: 370px;
   padding: 50px 36px;
   padding-bottom: 30px;
-  outline: 2px solid rgb(223, 222, 222);
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -367,6 +450,10 @@ margin-bottom: 50px;
   margin: 0;
   margin-bottom: 30px;
   min-height: 130px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1C1C1C;
 }
 
 .documents-cards-summary {
