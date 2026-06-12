@@ -889,7 +889,7 @@ box-sizing: border-box;
 .form-check input {
   /* margin-right: 4px; */
   margin: 0;
-  scale: 1.2;
+  /* scale: 1.2; */
 }
 
 .form-check a {
