@@ -767,3 +767,60 @@ color: #1C1C1C;
 .social-link-max {
   background-image: url(../img/icon_max_color.svg);
 }
+
+/* Join-us */
+.join-us {
+  scroll-margin-top: 60px;
+  border-bottom: 1px solid rgb(192, 188, 188);
+}
+
+.join-section-descr {
+margin: 0;
+margin-bottom: 30px;
+
+text-align: left;
+
+font-size: 16px;
+line-height: 120%;
+color: #1C1C1C;
+}
+
+.input-name {
+  width: 100%;
+  max-width: 500px;
+  height: 44px;
+  padding: 10px 12px;
+}
+
+.form-top {
+  display: flex;
+  gap: 40px;
+
+}
+
+.form-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+.form-select {
+width: 100%;
+max-width: 500px;
+height: 44px;
+padding: 10px 12px;
+}
