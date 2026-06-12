@@ -551,7 +551,7 @@
                             </div> -->
 
                             <div class="form-field">
-                                <label for="organization" class="form-title form-title-required">Название организации</label>
+                                <label for="organization" class="form-title form-title-required" maxlength="150";>Название организации</label>
                                 <input 
                                 id="organization"
                                 type="text" 
@@ -777,11 +777,27 @@
                         placeholder="Здесь вы можете написать комментарий по&nbsp;процедуре отбора"></textarea>
 
                         </div>
+                <div class="form-bottom">
+                    <div class="form-wrapper">
+                    <button class="btn btn-reset form-btn">Отправить</button>
+                    <label for="pdn" class="form-check">
+                    <input 
+                    id="pdn"
+                    name="pdn"
+                    type="checkbox" 
+                    required>
+                    <span class="form-check-text">
+                    Я принимаю <a href="#" target="_blank">условия обработки ПДн</a>
+                </span>
+                    </label>
                 </div>
-
             </div>
+        </div>
 
-        </form>
+    </div>
+
+
+</form>
     </div>
 
         </section>
@@ -815,7 +831,7 @@
                         </li>
 
                         <li class="footer-item">
-                            <a href="#hero" target="_blank" class="footer-link">Наверх</a>
+                            <a href="#hero" class="footer-link">Наверх</a>
                         </li>
                     </ul>
                 </nav>
