@@ -551,7 +551,7 @@
                             </div> -->
 
                             <div class="form-field">
-                                <label for="organization">Название организации</label>
+                                <label for="organization" class="form-title form-title-required">Название организации</label>
                                 <input 
                                 id="organization"
                                 type="text" 
@@ -563,7 +563,7 @@
 
 
                             <div class="form-field">
-                                <label for="city">Населенный пункт</label>
+                                <label for="city" class="form-title form-title-required">Населенный пункт</label>
                                 <input 
                                 id="city"
                                 type="text" 
@@ -576,7 +576,7 @@
 
 
                             <div class="form-field">
-                                <label for="region">
+                                <label for="region" class="form-title form-title-required">
                                     Регион
                                 </label>
 
@@ -588,6 +588,7 @@
 
                                     <option value="" disabled selected>
                                     Выберите регион
+                                    <!-- Надо доделать выбор другое через JS -->
                                     </option>
 
                                       <option value="Алтайский край">Алтайский край</option>
@@ -682,15 +683,104 @@
 
                                 </select>
                         </div>
-                        <div class="form-right">
-                            
+                    </div>
+
+                    <div class="form-right">
+                            <div class="form-field">
+                            <fieldset class="form-group">
+                                <legend class="form-title">
+                                    Откуда вы узнали об отборе ЦРЛП?
+                                    <!-- Надо доделать обязательность ответа на вопрос через JS -->
+                                </legend>
+
+                                <label class="form-choice">
+                                    <input
+                                    type="checkbox"
+                                    name="source[]"
+                                    value="Социальные сети">
+                                    Социальные сети Программы                                    
+                                </label>
+                                <label class="form-choice">
+                                    <input
+                                    type="checkbox"
+                                    name="source[]"
+                                    value="Почтовая рассылка">
+                                    Рассылка по электронной почте от Программы                                   
+                                </label>
+                                <label class="form-choice">
+                                    <input
+                                    type="checkbox"
+                                    name="source[]"
+                                    value="От куратора">
+                                    Сообщение от регионального куратора                                    
+                                </label>
+                                <label class="form-choice">
+                                    <input
+                                    type="checkbox"
+                                    name="source[]"
+                                    value="Коллеги-ЦРЛП">
+                                    Сообщение от коллег, уже имеющих статус ЦРЛП                                    
+                                </label>
+                                <label class="form-choice">
+                                    <input
+                                    type="checkbox"
+                                    name="source[]"
+                                    value="Другое">
+                                    Другое   
+                                    <!-- Доделать, чтобы вносили текст -->
+                                </label>
+
+                            </fieldset>
+                        </div>
+                        <div class="form-field">
+                            <fieldset class="form-group-radio">
+                                <legend class="form-title form-title-required">
+                                    Планируете ли вы подавать заявку в 2026 году?
+                                </legend>
+                                <label class="form-choice">
+                                    <input
+                                    type="radio"
+                                    name="application-plan"
+                                    value="Да"
+                                    required>
+                                    Да
+                                </label>
+                                <label class="form-choice">
+                                    <input
+                                    type="radio"
+                                    name="application-plan"
+                                    value="Нет"
+                                    required>
+                                    Нет
+                                </label>
+                                <label class="form-choice">
+                                    <input
+                                    type="radio"
+                                    name="application-plan"
+                                    value="Не решили"
+                                    required>
+                                    Пока не решили
+                                </label>
+                            </fieldset>
                         </div>
 
-         
+
                     </div>
+                </div>
+                        <div class="form-field">
+                        <label for="comment"class="form-title">Комментарий</label>
+                        <textarea 
+                        id="comment" 
+                        name="comment"
+                        class="form-textarea"
+                        rows="4"
+                        placeholder="Здесь вы&nbsp;можете поделиться с&nbsp;организаторами обратной связью по&nbsp;отбору. Если у&nbsp;вас вопрос&nbsp;&mdash; пришлите его на&nbsp;почту, не&nbsp;пишите сюда">
+                        </textarea>
+                        </div>
                 </div>
 
             </div>
+
         </form>
     </div>
 
