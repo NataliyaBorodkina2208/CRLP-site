@@ -52,6 +52,7 @@ img {
 :root {
   --green-crlp: #289244;
   --orange-crlp: #ff7c00;
+  --orange-light-crlp: #FFB600;
 
   --black-crlp: #1c1c1c;
 
@@ -123,10 +124,38 @@ body {
 }
 
 .header-link {
+  position: relative;
   font-weight: 600;
   color: var(--black-crlp);
   font-size: 16px;
 }
+.header-link:focus {
+  outline: 1px solid var(--grey-light-crlp);
+  outline-offset: 3px;
+}
+
+.header-link:hover {
+  color: var(--orange-crlp);
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--orange-crlp);
+  opacity: 0;
+}
+.header-link:active {
+  outline: none;
+}
+
+.header-link:active::after {
+  opacity: 1;
+}
+
 
 .header-container {
   align-items: center;
@@ -156,6 +185,8 @@ body {
 } */
 
 .btn {
+  position: relative;
+  outline: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -171,6 +202,35 @@ body {
   color: var(--white);
   background-color: var(--orange-crlp);
 }
+/* тут ховеры для кнопок, но поскольку во встроенной форме у меня кнопки без ховеров, то тут попробовала, но не применяю */
+/* .btn::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: inherit;
+  border: 1px solid var(--orange-crlp);
+  outline: none;
+  opacity: 0;
+}
+
+.btn:focus::after {
+  opacity: 1;
+}
+
+.btn:hover {
+  background-color: var(--orange-light-crlp);
+}
+
+.btn:active {
+  background-color: var(--orange-crlp);
+}
+
+.btn:active::after {
+  opacity: 0;
+} */
 
 /* .header-btn {
   margin-left: 30px;
@@ -248,18 +308,14 @@ body {
 }
 
 .roadmap-section-descr {
-margin: 0;
-margin-bottom: 50px;
+  margin: 0;
+  margin-bottom: 50px;
 
-text-align: center;
+  text-align: center;
 
-font-size: 16px;
-line-height: 120%;
-color: var(--black-crlp);
-}
-
-.roadmap-item-icon {
-  justify-content: space-between;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--black-crlp);
 }
 
 .roadmap-item {
@@ -267,9 +323,12 @@ color: var(--black-crlp);
   align-items: center;
   padding: 60px 30px;
   width: 270px;
+  color: var(--black-crlp);
+
   /* border: 1px solid var(--grey-border-crlp);
   border-radius: 12px; */
   }
+
 
   .roadmap-item:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -277,12 +336,25 @@ color: var(--black-crlp);
 
   .roadmap-item-icon {
   display: block;
-  height: 77px;
-  margin-bottom: 25px;
   width: 66px;
   height: 66px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+
+  /* color: var(--green-crlp); */
+  /* justify-content: space-between; */
 }
+
+/* ховер — пока не нужен */
+/* .roadmap-item:hover .roadmap-item-icon {
+  color: var(--white);
+} 
+  
+.roadmap-item:hover {
+  color: var(--white);
+  border-color: var(--orange-crlp);
+  background-color: var(--green-crlp);
+}
+*/
 
 /* сделать что-то похожее по остальным, но со своими ньюансами */
 .roadmap-item-title { 
@@ -291,7 +363,7 @@ color: var(--black-crlp);
   font-weight: 600;
   font-size: 20px;
   line-height: 130%;
-  color: var(--black-crlp);
+  /* color: var(--black-crlp); */
 }
 
 .roadmap-item-descr {
