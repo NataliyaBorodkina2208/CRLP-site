@@ -992,6 +992,20 @@ box-sizing: border-box;
   box-sizing: border-box;
 }
 
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--orange-crlp);  
+}
+
+
+.form-textarea:not(:placeholder-shown) {
+  border-color: var(--green-crlp);
+}
+
+.form-textarea:focus:not(:placeholder-shown) {
+  border-color: var(--green-crlp);
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: column;
