@@ -325,9 +325,12 @@ body {
   width: 270px;
   color: var(--black-crlp);
 
-  /* border: 1px solid var(--grey-border-crlp);
-  border-radius: 12px; */
-  }
+/* Для будущего варианта с кликабельными карточками */
+/*
+border: 1px solid var(--grey-border-crlp);
+border-radius: 12px;
+*/
+}
 
 
   .roadmap-item:not(:nth-child(4n)) {
@@ -339,9 +342,7 @@ body {
   width: 66px;
   height: 66px;
   margin-bottom: 25px;
-
   /* color: var(--green-crlp); */
-  /* justify-content: space-between; */
 }
 
 /* ховер — пока не нужен */
@@ -732,11 +733,15 @@ body {
 
 .contacts-item {
   flex-direction: column;
+  align-items: flex-start;
+
   width: 370px;
+  padding-top: 48px;
+
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 29px 29px;
-  padding-top: 48px;
+
   /* outline: 2px solid grey; */
 }
 
@@ -771,13 +776,49 @@ body {
 .contacts-item-link {
   margin-bottom: 5px;
   /* display: block; */
+  display: inline-block;
 
   font-weight: 600;  
   font-size: 16px;
-  color: var(--green-crlp);
+  color: var(--black-crlp);
   /* text-decoration: underline; */
   line-height: 180%;
+
  }
+
+.contacts-item-link:hover,
+.contacts-item-link:focus {
+  color: var(--green-crlp);
+  text-decoration: underline;
+}
+
+
+
+ /* .contacts-item-link:active {
+  outline: none;
+  color: var(--green-crlp);
+}
+
+.contacts-item-link::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--green-crlp);
+  opacity: 0;
+}
+
+.contacts-item-link:hover::after {
+  opacity: 1;
+} */
+
+
+
 
 /* Join-us */
 .join-us {
@@ -804,6 +845,21 @@ color: var(--black-crlp);
   border: 1px solid var(--grey-light-crlp);
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.input-name:focus {
+  outline: none;
+  border-color: var(--orange-crlp);
+} 
+
+/* Полезное свойство — чтобы зеленый бордер появлялся при вводе текста в рамку */
+
+.input-name:not(:placeholder-shown) {
+  border-color: var(--green-crlp);
+}
+
+.input-name:focus:not(:placeholder-shown) {
+  border-color: var(--green-crlp);
 }
 
 .form-top {
@@ -841,6 +897,17 @@ padding: 10px 12px;
 border: 1px solid var(--grey-light-crlp);
 border-radius: 4px;
 box-sizing: border-box;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--orange-crlp);  
+}
+
+
+.form-select option:checked {
+  background-color: var(--green-crlp);
+  color: white;
 }
 
 .form-group {
