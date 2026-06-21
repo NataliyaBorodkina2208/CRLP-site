@@ -121,6 +121,7 @@ body {
   padding: 16px 0;
   border-bottom: 1px solid var(--grey-light-crlp);
   background-color: var(--white);
+  
 }
 
 .header-link {
@@ -128,7 +129,10 @@ body {
   font-weight: 600;
   color: var(--black-crlp);
   font-size: 16px;
+  transition: color 0.3s ease-in-out;
 }
+
+
 .header-link:focus {
   outline: 1px solid var(--grey-light-crlp);
   outline-offset: 3px;
@@ -147,6 +151,8 @@ body {
   height: 2px;
   background-color: var(--orange-crlp);
   opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+
 }
 .header-link:active {
   outline: none;
