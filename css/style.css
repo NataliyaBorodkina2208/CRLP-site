@@ -158,6 +158,7 @@ body {
   outline: none;
 }
 
+/* Потом, когда будет JS, сделать чтобы подсвечивалось, в каком разделе ты находишься */
 .header-link:active::after {
   opacity: 1;
 }
@@ -207,9 +208,11 @@ body {
 
   color: var(--white);
   background-color: var(--orange-crlp);
+
+  /* transition: background-color 0.3s ease-in-out; */
 }
 /* тут ховеры для кнопок, но поскольку во встроенной форме у меня кнопки без ховеров, то тут попробовала, но не применяю */
-/* .btn::after {
+.btn::after {
   content: "";
   position: absolute;
   top: -3px;
@@ -220,15 +223,16 @@ body {
   border: 1px solid var(--orange-crlp);
   outline: none;
   opacity: 0;
+  /* transition: opacity 0.3s ease-in-out; */
 }
 
 .btn:focus::after {
   opacity: 1;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: var(--orange-light-crlp);
-}
+} */
 
 .btn:active {
   background-color: var(--orange-crlp);
@@ -238,17 +242,17 @@ body {
   opacity: 0;
 } */
 
-/* .header-btn {
+.header-btn {
   margin-left: 30px;
-} */
+}
 
-.video-wrapper {
+/* .video-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* max-width: 900px; */
+  max-width: 900px;
   margin: 0 auto;
-}
+} */
 
 .video {
   display: block;
@@ -360,8 +364,8 @@ border-radius: 12px;
   color: var(--white);
   border-color: var(--orange-crlp);
   background-color: var(--green-crlp);
-}
-*/
+} */
+
 
 /* сделать что-то похожее по остальным, но со своими ньюансами */
 .roadmap-item-title { 
@@ -789,6 +793,8 @@ border-radius: 12px;
   color: var(--black-crlp);
   /* text-decoration: underline; */
   line-height: 180%;
+
+  transition: color 0.3s ease-in-out;
 
  }
 
