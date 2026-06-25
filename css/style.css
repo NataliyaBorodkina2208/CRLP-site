@@ -857,6 +857,8 @@ color: var(--black-crlp);
   border: 1px solid var(--grey-light-crlp);
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+
 }
 
 .input-name:focus {
@@ -909,6 +911,7 @@ padding: 10px 12px;
 border: 1px solid var(--grey-light-crlp);
 border-radius: 4px;
 box-sizing: border-box;
+transition: border-color 0.3s ease-in-out;
 }
 
 .form-select:focus {
@@ -1002,6 +1005,7 @@ box-sizing: border-box;
   border: 1px solid var(--grey-light-crlp);
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .form-textarea:focus {
@@ -1080,7 +1084,41 @@ box-sizing: border-box;
   font-weight: 600;
   font-size: 14px;
   line-height: 120%;
+  color: var(--grey-crlp);
+  transition: color 0.3s ease-in-out;
 }
+
+
+.footer-link:focus {
+  outline: 1px solid var(--grey-light-crlp);
+  outline-offset: 3px;
+}
+
+.footer-link:hover {
+  color: var(--orange-crlp);
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--orange-crlp);
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+
+}
+.footer-link:active {
+  outline: none;
+}
+
+/* Потом, когда будет JS, сделать чтобы подсвечивалось, в каком разделе ты находишься */
+.footer-link:active::after {
+  opacity: 1;
+}
+
 
 .footer-container {
   align-items: center;
