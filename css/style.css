@@ -334,6 +334,8 @@ body {
   padding: 60px 30px;
   width: 270px;
   color: var(--black-crlp);
+  transition: transform 0.3s ease-in-out;
+
 
 /* Для будущего варианта с кликабельными карточками */
 /*
@@ -341,7 +343,15 @@ border: 1px solid var(--grey-border-crlp);
 border-radius: 12px;
 */
 }
-
+.roadmap-item:hover {
+  transform: translateY(-8px);
+  background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f7fbf7
+        );
+}
 
   .roadmap-item:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -1155,7 +1165,11 @@ transition: border-color 0.3s ease-in-out;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
- 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.social-link:hover {
+  transform: scale(1.15);
 }
 
 .footer-right {
