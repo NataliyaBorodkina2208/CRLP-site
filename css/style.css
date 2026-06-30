@@ -48,7 +48,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
-/* colors */
+/* colors and gaps*/
 :root {
   --green-crlp: #289244;
   --orange-crlp: #ff7c00;
@@ -61,13 +61,15 @@ img {
   --grey-border-crlp: #c0bcbc;
 
   --white: #ffffff;
+  --gap: 30px;
 }
 
 body {
-  min-width: 1200px;
+  min-width: 320px;
   font-family: 'SBSans', sans-serif;
   font-weight: 400;
 }
+
 
 /* glob */
 .list-reset {
@@ -89,9 +91,11 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  max-width: 1260px;
+  padding: 0 30px;
   margin: 0 auto;
+  width: 100%;
+
 }
 
 .section-title {
@@ -328,21 +332,43 @@ body {
   color: var(--black-crlp);
 }
 
+.roadmap-list {
+  --items: 4;
+  --offsets: 3;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .roadmap-list {
+    --items: 2;
+    --offsets: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap-list {
+    --items: 1;
+    --offsets: 0;
+  }
+}
+
+
+
 .roadmap-item {
   flex-direction: column;
   align-items: center;
   padding: 60px 30px;
-  width: 270px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / var(--items));
   color: var(--black-crlp);
   transition: transform 0.3s ease-in-out;
-
-
+}
 /* Для будущего варианта с кликабельными карточками */
 /*
 border: 1px solid var(--grey-border-crlp);
 border-radius: 12px;
 */
-}
+
 .roadmap-item:hover {
   transform: translateY(-8px);
   background:
@@ -353,9 +379,9 @@ border-radius: 12px;
         );
 }
 
-  .roadmap-item:not(:nth-child(4n)) {
+  /* .roadmap-item:not(:nth-child(4n)) {
     margin-right: 30px;
-  }
+  } */
 
   .roadmap-item-icon {
   display: block;
