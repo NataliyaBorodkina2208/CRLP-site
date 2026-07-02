@@ -244,7 +244,7 @@ body {
 
 .btn:active::after {
   opacity: 0;
-} */
+} 
 
 .header-btn {
   margin-left: 30px;
@@ -258,6 +258,37 @@ body {
   margin: 0 auto;
 } */
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .header-logo {
+    margin-right: 40px;
+  }
+
+  .header-logo img {
+    width: 180px;
+  }
+
+  .header-list {
+    gap: 30px;
+  }
+
+  .header-link {
+    font-size: 14px;
+  }
+
+  .header-btn {
+    margin-left: 20px;
+  }
+
+  .btn {
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+}
+
 .video {
   display: block;
 
@@ -269,16 +300,20 @@ body {
   border-radius: 8px;
 }
 
+
+
 /* hero */
+
 .hero {
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   /* scroll-margin-top: 120px; */
   background-image: url('../img/hero-bg.png');
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .hero-btn {
   margin-bottom: 14px;
   min-width: 200px;
@@ -309,6 +344,26 @@ body {
   font-size: 18px;
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 55%;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-descr {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
 
 /* roadmap */
 .roadmap {
@@ -790,6 +845,16 @@ border-radius: 12px;
   
 }
 
+#anketolog-frame-1038641 {
+  font-size: 16px;
+  font-family: 'SBSans', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  #anketolog-frame-1038641 {
+    font-size: 14px;
+  }
+}
 /* contacts */
 .contacts {
   scroll-margin-top: 60px;
