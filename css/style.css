@@ -291,8 +291,8 @@ body {
     width: 160px;
   }
 
-  .header-list {
-    gap: clamp(16px, 2vw, 22px);
+ .header-list {
+    gap: clamp(20px, 3vw, 30px);
 }
 
   .header-link {
