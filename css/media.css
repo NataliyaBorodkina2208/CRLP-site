@@ -1,0 +1,219 @@
+
+/* Media */
+
+@media (max-width: 1200px) {
+  /* header */
+ .header-container {
+   gap: 24px;
+}
+
+  .header-logo img {
+    width: 190px;
+  }
+
+  .header-link {
+    font-size: 14px;
+  }
+
+  .header-btn {
+    padding: 16px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1080px) {
+  /* documents */
+  .documents-cards-list {
+    --items: 2;
+    --offsets: 1;
+    justify-content: center;
+  }
+    /* footer */
+  .footer-link-full {
+    display: none;
+  }
+
+  .footer-link-short {
+    display: inline;
+}
+}
+
+@media (max-width: 1024px) {
+  /* Typography */
+  .section-title {
+    font-size: 30px;
+  }
+ 
+  /* header */
+  .header-logo img {
+    width: 170px;
+  }
+
+ .header-list {
+    gap: clamp(20px, 3vw, 30px);
+}
+
+  .header-link {
+    font-size: 13px;
+  }
+
+  .header-btn {
+    padding: 14px 18px;
+    font-size: 12px;
+  }
+   
+
+/* hero */
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 60%;
+  }
+
+  .hero-title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-descr {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  /* roadmap */
+  .roadmap-list {
+    --items: 2;
+    --offsets: 1;
+  }
+/* anketolog */
+  #anketolog-frame-1038641 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 910px) {
+  /* mobile header */
+  .header-nav {
+    display: none;
+  }
+
+  .header-logo {
+    margin-right: auto;
+}
+
+  .header-btn {
+    height: 42px;
+    padding: 0 18px;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    gap: 5px;
+    /* padding: 8px; */
+
+    border: 1px solid var(--green-crlp);
+    border-radius: 6px;
+
+    /* transition: background-color 0.3s ease-in-out; */
+  }
+
+  .burger-line {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: var(--green-crlp);
+  }
+
+  /* hero */
+
+ .hero {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/hero-bg3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .hero-content {
+    max-width: 100%;
+}
+
+}
+@media (max-width: 768px) {
+  /* Typography */
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* hero */
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .hero-content {
+    max-width: 85%;
+    margin-left: 0;
+  }
+
+  .hero-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .hero-descr {
+    max-width: 620px;
+    margin-bottom: 32px;
+  }
+
+  /* roadmap */
+  .roadmap-section-descr {
+    margin-bottom: 36px;
+    font-size: 14px;
+  }
+
+  .roadmap-list {
+    --items: 2;
+    --offsets: 1;
+    row-gap: 36px;
+  }
+
+  .roadmap-item {
+    padding: 36px 20px;
+  }
+
+  .roadmap-item-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+  }
+
+  .roadmap-item-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .roadmap-item-descr {
+    font-size: 14px;
+  }
+
+  /* documents */
+  .documents-cards-list {
+    --items: 1;
+    --offsets: 0;
+  }
+}
