@@ -482,10 +482,6 @@ border-radius: 12px;
   margin-right: auto; */
 }
 
-.faq-item:not(:nth-child(2n)) {
-  margin-right: 30px;
-
-}
 
 .blog-preview-image {
   flex-shrink: 0;
@@ -707,6 +703,7 @@ border-radius: 12px;
   margin: 0;
   margin-bottom: 6px;
   min-height: 20px;
+  font-size: 18px;
 }
 
 .documents-cards-descr {
