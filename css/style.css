@@ -988,7 +988,7 @@ transition: border-color 0.3s ease-in-out;
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 
   margin: 0;
   padding: 0;
@@ -999,6 +999,7 @@ transition: border-color 0.3s ease-in-out;
 .form-group-radio {
   display: flex;
   flex-wrap: wrap;
+  gap: 12px;
 
   padding: 0;
   border: none;
@@ -1010,9 +1011,9 @@ transition: border-color 0.3s ease-in-out;
   
 }
 
-.form-group-radio .form-choice:not(:last-child) {
+/* .form-group-radio .form-choice:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .form-group legend {
   margin-bottom: 12px;
@@ -1023,7 +1024,7 @@ transition: border-color 0.3s ease-in-out;
   align-items: flex-start;
   gap: 12px;
 
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 /* классное свойство! */
@@ -1035,6 +1036,11 @@ transition: border-color 0.3s ease-in-out;
 
   accent-color: var(--green-crlp);
 
+}
+
+.form-group,
+.form-group-radio {
+  gap: 12px;
 }
 
 .form-title {
@@ -1101,14 +1107,16 @@ transition: border-color 0.3s ease-in-out;
 }
 
 .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4px;  
+
   font-size: 12px;
   line-height: 120%;
   text-align: center;
   color:var(--grey-crlp);
-
-  display: flex;
-  align-items: center;
-  gap: 6px;
 
   margin-bottom: 8px;
   accent-color: var(--green-crlp);
@@ -1117,6 +1125,7 @@ transition: border-color 0.3s ease-in-out;
 
 .form-check input {
   /* margin-right: 4px; */
+  margin-top: 1px;
   margin: 0;
   /* scale: 1.2; */
 }
@@ -1127,6 +1136,8 @@ transition: border-color 0.3s ease-in-out;
 
 .form-check-text {
   display: inline;
+  transform: translateY(2px);
+
 }
 
 /* footer */
