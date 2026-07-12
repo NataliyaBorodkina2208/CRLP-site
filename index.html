@@ -535,7 +535,7 @@
                     Обратная связь
                 </h2>
                 <p class="join-section-descr">
-                    Пожалуйста, поделитесь своими планами на участие в отборе.
+                    Пожалуйста, поделитесь своими планами на&nbsp;участие в&nbsp;отборе.
                 </p>
                 <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
                     <div class="form-top">
@@ -563,11 +563,12 @@
                             </div> -->
 
                             <div class="form-field">
-                                <label for="organization" class="form-title form-title-required" maxlength="150";>Название организации</label>
+                                <label for="organization" class="form-title form-title-required">Название организации</label>
                                 <input 
                                 id="organization"
                                 type="text" 
                                 name="organization" 
+                                maxlength="150"
                                 placeholder="Например, МБОУ СОШ №1" 
                                 class="input-name" 
                                 required>  
@@ -780,7 +781,7 @@
                     </div>
                 </div>
                         <div class="form-field">
-                        <label for="comment"class="form-title">Комментарий</label>
+                        <label for="comment" class="form-title">Комментарий</label>
                         <textarea 
                         id="comment" 
                         name="comment"
@@ -826,11 +827,14 @@
                 <nav class="footer-nav">
                     <ul class="footer-list list-reset flex">
                         <li class="footer-item">
-                            <a href="https://vbudushee.ru/" 
+                            <a 
+                            href="https://vbudushee.ru/" 
                             target="_blank" 
+                            rel="noopener noreferrer"
                             class="footer-link footer-link-full">О фонде</a>
                             <a href="https://vbudushee.ru/" 
-                            target="_blank" 
+                            target="_blank"
+                            rel="noopener noreferrer" 
                             class="footer-link footer-link-short">О фонде</a>
                         </li>
 
@@ -841,9 +845,11 @@
                         <li class="footer-item">
                             <a href="https://vbudushee.ru/education/developmental-environment/" 
                             target="_blank" 
+                            rel="noopener noreferrer"
                             class="footer-link footer-link-full">О программе</a>
                              <a href="https://vbudushee.ru/education/developmental-environment/" 
                             target="_blank" 
+                            rel="noopener noreferrer"
                             class="footer-link footer-link-short">О программе</a>
                         </li>
 
@@ -853,9 +859,24 @@
                     </ul>
                 </nav>
                 <ul class="social list-reset flex">
-                    <li><a href="https://vk.com/fondvbudushee" class="social-link social-link-vk" target="_blank"></a></li>
-                    <li><a href="https://t.me/fondvkladvbudushee" class="social-link social-link-telegram" target="_blank"></a></li>
-                    <li><a href="https://max.ru/join/UxeWiRzZXng-GmSsbhlwrGHngVDlVlvjbAvx875n154" class="social-link social-link-max" target="_blank"></a></li>
+                    <li><a 
+                        href="https://vk.com/fondvbudushee" 
+                        class="social-link social-link-vk" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="ВКонтакте"></a></li>
+                    <li><a 
+                        href="https://t.me/fondvkladvbudushee" 
+                        class="social-link social-link-telegram" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Telegram"></a></li>
+                    <li><a 
+                        href="https://max.ru/join/UxeWiRzZXng-GmSsbhlwrGHngVDlVlvjbAvx875n154" 
+                        class="social-link social-link-max" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="MAX"></a></li>
                 </ul>
             </div>
 

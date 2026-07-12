@@ -816,6 +816,7 @@ border-radius: 12px;
 
 .contacts-item-address {
   background-image: url('../img/icon_location.svg');
+  background-size: 32px 32px;
 }
 
 .contacts-item-call {
@@ -836,7 +837,7 @@ border-radius: 12px;
 .contacts-item-title {
   margin: 0;
   padding-top: 6px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 20px;
   line-height: 130%;
@@ -1001,6 +1002,7 @@ transition: border-color 0.3s ease-in-out;
   flex-wrap: wrap;
   gap: 12px;
 
+  margin: 0;
   padding: 0;
   border: none;
 }
