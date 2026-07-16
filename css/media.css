@@ -7,7 +7,7 @@
    gap: 24px;
 }
 
-  .header-logo img {
+  .header-logo-full {
     width: 190px;
   }
 
@@ -39,7 +39,7 @@
   }
  
   /* header */
-  .header-logo img {
+  .header-logo-full {
     width: 170px;
   }
 
@@ -58,11 +58,11 @@
    
 
 /* hero */
-  .hero {
+  /* .hero {
     padding-top: 80px;
     padding-bottom: 80px;
     background-position: center;
-  }
+  } */
 
   .hero-content {
     max-width: 60%;
@@ -90,6 +90,41 @@
 }
 
 @media (max-width: 910px) {
+  
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../img/hero-bg3.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 85%;
+    margin-left: 0;
+  }
+
+  .hero-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 130%;
+  }
+
+  .hero-descr {
+    max-width: 620px;
+    margin-bottom: 32px;
+  }
+
+
   /* mobile header */
   .header-nav {
     display: none;
@@ -112,6 +147,8 @@
     width: 42px;
     height: 42px;
 
+    flex-shrink: 0;
+
     gap: 5px;
     /* padding: 8px; */
 
@@ -128,22 +165,6 @@
     background-color: var(--green-crlp);
   }
 
-  /* hero */
-
- .hero {
-  background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../img/hero-bg3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-  .hero-content {
-    max-width: 100%;
-}
 }
 
 
@@ -154,28 +175,6 @@
     font-size: 28px;
   }
 
-  /* hero */
-  .hero {
-    padding-top: 80px;
-    padding-bottom: 60px;
-  }
-
-  .hero-content {
-    max-width: 85%;
-    margin-left: 0;
-  }
-
-  .hero-title {
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-size: 30px;
-    line-height: 130%;
-  }
-
-  .hero-descr {
-    max-width: 620px;
-    margin-bottom: 32px;
-  }
 
   /* roadmap */
   .roadmap-section-descr {
@@ -341,4 +340,161 @@
   padding-top: 64px;
   padding-bottom: 64px;
 }
+}
+
+@media (max-width: 500px) {
+
+.header-logo-full {
+    display: none;
+  }
+
+  .header-logo-short {
+    display: block;
+    width: 42px;
+    height: auto;
+  }
+
+.container {
+  padding: 0 24px;
+}
+
+.header {
+padding: 10px 0;
+}
+
+/* hero */
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/hero-bg4.png");
+
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+.hero-btn {
+  min-width: 190px;
+  padding: 16px 20px;
+}
+
+/* roadmap */
+.roadmap-list {
+  row-gap: 20px;
+}
+
+.roadmap-item {
+  padding: 24px 12px;
+}
+
+/* faq */
+.blog-preview-image {
+  width: 90px;
+  height: 90px;
+
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.blog-preview {
+    padding: 12px 16px;
+}
+
+
+/* documents */
+
+.documents-info {
+  margin-bottom: 28px;
+}
+
+.documents-list {
+  margin-bottom: 0;
+}
+
+.documents-cards-list {
+  row-gap: 16px;
+}
+
+.documents-cards-list-item {
+  margin-bottom: 16px;
+  padding: 24px 20px;
+}
+
+.form-btn {
+  min-width: 190px;
+  padding: 16px 20px;
+  }
+
+  /* form */
+.form-check {
+  gap: 6px;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  max-width: 190px;
+  margin: 0 auto 8px;
+}
+
+.form-check input {
+  flex-shrink: 0;
+  margin: 1px 0 0;
+}
+
+.form-check-text {
+  display: block;
+  line-height: 1.2;
+  text-align: left;
+}
+
+}
+
+@media (max-width: 440px) {
+
+/* Typography */
+.section-title {
+  font-size: 26px;
+}
+
+.roadmap-item-title,
+.blog-preview-title,
+.documents-cards-item-title,
+.contacts-item-title,
+.faq-more,
+.faq-more-title {
+  font-size: 17px;
+}
+
+/* Roadmap */
+
+
+.roadmap-list {
+  column-gap: 16px;
+  row-gap: 12px;
+}
+.roadmap-item {
+  padding: 20px 8px;
+}
+.roadmap-item-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+.roadmap-item-title {
+  margin-bottom: 8px;
+}
+
+.roadmap-item-descr {
+  font-size: 13px;
+}
+
+/* Sections */
+ .section-offset {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 }
