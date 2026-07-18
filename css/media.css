@@ -314,7 +314,7 @@
   .contacts-list {
     flex-direction: row;
     flex-wrap: wrap;
-     --gap: 38px;
+     --gap: 40px;
      gap: var(--gap);
 
   }
@@ -495,6 +495,103 @@ padding: 10px 0;
  .section-offset {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+/* faq */
+.faq-list {
+  gap: 20px;
+}
+
+.blog-preview-image {
+  width: 74px;
+  height: 74px;
+}
+ol.documents-list {
+    padding-inline-start: 32px;
+}
+
+/* contacts */
+.contacts-item-title {
+  margin-bottom: 10px;
+}
+
+/* form */
+.form-textarea {
+  font-size: 14px;
+}
+
+.form-field {
+   margin-bottom: 28px;
+}
+.footer-logo img {
+  width: 48px;
+}
+}
+
+@media (max-width: 392px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .header-container {
+    gap: 20px;
+  }
+
+  .hero {
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url("../img/hero-bg4.png");
+
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: 40% 43%;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .hero-descr {
+    font-size: 14px;
+  }
+
+  .section-offset {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+@media (max-width: 365px) {
+  /* roadmap */
+  .roadmap-list {
+    --items: 1;
+    --offsets: 0;
+
+    flex-direction: column;
+    row-gap: 18px;
+  }
+
+  /* contacts */
+  .contacts-list {
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .contacts-item {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-position: center 8px;
+  }
+
+  .contacts-section {
+    text-align: center;
+  }
+.footer {
+    padding: 14px;
 }
 
 }
