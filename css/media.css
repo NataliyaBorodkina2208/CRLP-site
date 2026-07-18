@@ -83,10 +83,7 @@
     --items: 2;
     --offsets: 1;
   }
-/* anketolog */
-  #anketolog-frame-1038641 {
-    font-size: 14px;
-  }
+
 }
 
 @media (max-width: 910px) {
@@ -281,7 +278,7 @@
 
 .contacts-item-title {
     font-size: 18px;
-    padding-top: 2px;   /* или 0, посмотрим */
+    padding-top: 2px; 
     margin-bottom: 24px;
 }
 
@@ -427,11 +424,6 @@ padding: 10px 0;
   min-width: 190px;
   padding: 16px 20px;
   }
-/* anketolog */
-.anketolog-wrapper {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
 
   /* form */
 .form-check {
@@ -454,6 +446,15 @@ padding: 10px 0;
   line-height: 1.2;
   text-align: left;
 }
+/* Anketolog */
+  .anketolog-wrapper {
+    margin-top: 32px;
+    overflow: hidden;
+  }
+
+  #anketolog-frame-1045282 {
+      overflow: hidden;
+  }
 
 }
 
@@ -568,6 +569,8 @@ ol.documents-list {
     padding-top: 36px;
     padding-bottom: 36px;
   }
+
+
 }
 @media (max-width: 365px) {
   /* roadmap */
@@ -579,6 +582,7 @@ ol.documents-list {
     row-gap: 18px;
   }
 
+ 
   /* contacts */
   .contacts-list {
     flex-direction: column;

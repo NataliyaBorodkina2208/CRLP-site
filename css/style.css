@@ -802,31 +802,35 @@
     font-size: 16px;
     color: var(--green-crlp);
     text-decoration: underline;
-    
-    
   }
+/* Anketolog */
+
+/* Anketolog */
 
 .anketolog-wrapper {
   width: 100%;
-  max-width: 900px;
-  margin: 50px auto 0;
-  margin-bottom: 36px;
+  /* min-width: 0; */
+
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 #anketolog-frame-1045282 {
   width: 100%;
-  max-width: 100%;
-  min-width: 0;
+  /* min-width: 0; */
 }
 
 #anketolog-frame-1045282 iframe {
   display: block;
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  border: 0;
-}
 
+  width: 100% !important;
+  height: auto;
+  /* min-width: 0 !important; */
+
+  margin: 0 !important;
+  border: 0;
+  
+}
 
   /* contacts */
   .contacts {
