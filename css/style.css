@@ -806,10 +806,26 @@
     
   }
 
-  #anketolog-frame-1038641 {
-    font-size: 16px;
-    font-family: 'SBSans', sans-serif;
-  }
+.anketolog-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto 0;
+  margin-bottom: 36px;
+}
+
+#anketolog-frame-1045282 {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+#anketolog-frame-1045282 iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  border: 0;
+}
 
 
   /* contacts */
