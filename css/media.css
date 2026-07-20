@@ -448,7 +448,7 @@
   /* Roadmap */
 
   .roadmap-list {
-    column-gap: 16px;
+    /* column-gap: 16px; */
     row-gap: 12px;
   }
   .roadmap-item {
@@ -571,7 +571,7 @@
   .contacts-section {
     text-align: center;
   }
-  
+
   .footer {
     padding: 14px;
   }
