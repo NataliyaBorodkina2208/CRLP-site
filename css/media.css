@@ -132,7 +132,7 @@
     flex-shrink: 0;
 
     gap: 5px;
-  
+
     border: 1px solid var(--green-crlp);
     border-radius: 6px;
   }
@@ -315,8 +315,6 @@
   }
 }
 
-
-
 @media (max-width: 500px) {
   .header-logo-full {
     display: none;
@@ -429,7 +427,6 @@
   }
 }
 
-
 @media (max-width: 440px) {
   /* Typography */
   .section-title {
@@ -502,13 +499,11 @@
   .form-field {
     margin-bottom: 28px;
   }
-  
+
   .footer-logo img {
     width: 48px;
   }
 }
-
-
 
 @media (max-width: 392px) {
   .container {
@@ -543,7 +538,6 @@
     padding-bottom: 36px;
   }
 }
-
 
 @media (max-width: 365px) {
   /* roadmap */
