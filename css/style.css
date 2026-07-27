@@ -72,6 +72,44 @@ img {
   --gap: 30px;
 }
 
+/* animation */
+/* как в примере — кнопка двигается туда-сюда */
+@keyframes anim {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconAttention {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 body {
   min-width: 320px;
   font-family: "SBSans", sans-serif;
@@ -242,10 +280,12 @@ body {
 
   color: var(--white);
   background-color: var(--orange-crlp);
+  border: 2px solid transparent;
 
-  /* transition: background-color 0.3s ease-in-out; */
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
-/* тут ховеры для кнопок, но поскольку во встроенной форме у меня кнопки без ховеров, то тут попробовала, но не применяю */
 .btn::after {
   content: "";
   position: absolute;
@@ -264,12 +304,16 @@ body {
   opacity: 1;
 }
 
-/* .btn:hover {
-    background-color: var(--orange-light-crlp);
-  } */
+.btn:hover {
+  color: var(--orange-crlp);
+  background-color: var(--white);
+  border: 2px solid var(--orange-crlp);
+}
 
 .btn:active {
-  background-color: var(--orange-crlp);
+  background-color: var(--orange-light-crlp);
+  color: var(--white);
+  border: 2px solid transparent;
 }
 
 .btn:active::after {
@@ -340,7 +384,13 @@ body {
   min-width: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  animation: fadeInUp 0.9s ease-out;
 }
+/* 
+.hero-btn:hover {
+  animation-play-state: paused;
+} */
 
 .hero-title {
   margin: 0;
@@ -416,7 +466,9 @@ body {
   margin-bottom: 25px;
   /* color: var(--green-crlp); */
 }
-
+.roadmap-item:hover .roadmap-item-icon {
+  animation: iconAttention 0.6s ease;
+}
 /* ховер — пока не нужен */
 /* .roadmap-item:hover .roadmap-item-icon {
     color: var(--white);
